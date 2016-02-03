@@ -6,9 +6,9 @@ public class Pin implements Cell {
     double y;
 
     long id;
-    float name;
+    byte name;
 
-    public Pin(double x, double y, long id, float name) {
+    public Pin(double x, double y, long id, byte name) {
         this.x = x;
         this.y = y;
         this.id = id;
