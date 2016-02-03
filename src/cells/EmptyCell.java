@@ -1,15 +1,30 @@
 package cells;
 
-/**
- * Created by aleksandrpliskin on 03.02.16.
- */
 public class EmptyCell implements Cell {
 
+    double x;
+    double y;
 
 
+    private boolean isEmpty = true;
 
     @Override
     public boolean isEmpty() {
-        return true;
+        return isEmpty;
     }
+
+    @Override
+    public double getX() {
+        return x;
+    }
+
+    @Override
+    public double getY() {
+        return y;
+    }
+
+    public void setEmpty(boolean empty) {
+        isEmpty = empty;
+    }
+
 }
